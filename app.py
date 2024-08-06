@@ -4,9 +4,9 @@ import pickle
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Bu satır CORS izinlerini ekler
+CORS(app)  # Bu satır tüm origin'lerden gelen istekleri kabul eder
 
-
+# Modeli yükleyin
 model = pickle.load(open("model.pkl", "rb"))
 
 @app.route("/")

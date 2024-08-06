@@ -1,6 +1,8 @@
 import numpy as np
 
 from flask import Flask, request, render_template
+from flask_cors import CORS  # Doğru şekilde içe aktardığınızdan emin olun
+
 
 import pickle
 
